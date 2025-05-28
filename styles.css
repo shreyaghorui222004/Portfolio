@@ -1213,6 +1213,108 @@ section {
 }
 
 /* Responsive Design */
+/* Large Desktop */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+    }
+    
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Laptop and Small Desktop */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-container {
+        gap: 2rem;
+    }
+    
+    .about-main {
+        gap: 3rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-social {
+        justify-content: center;
+    }
+    
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-visual {
+        order: -1;
+    }
+    
+    .showcase-image .image-placeholder {
+        margin: 0 auto;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    section {
+        padding: 100px 0;
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1337,6 +1439,32 @@ section {
     .showcase-image .image-placeholder {
         width: 200px !important;
         height: 200px !important;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-greeting {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-form-wrapper,
+    .contact-card {
+        padding: 1.5rem;
     }
 }
 
